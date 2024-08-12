@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f3f0;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 95px;
+    height: 95px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    color: #f55989;
+    font-weight: bold;
+    margin: 5px;
+    font-family: "Outfit", sans-serif;
+}
+
+.buscador img {
+    width: 30px;
+    margin: 15px;
+    margin-right: 50px;
+}
+
+
+.opciones a {
+    margin: 15px;
+    color: #d79d58;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    text-decoration: none;
+}
+.Home img{
+    width: 100%;
+    height: 580px;
+}
+#parrafo {
+    
+    position:relative;
+    
+}
+
+#parrafo p {
+    margin-top: 180px;
+    position: absolute; 
+    font-size: 33px;
+    right: 50px; 
+    width: 40%; 
+    text-align: center;
+    color: white; 
+    padding: 20px; 
+}
+.Nosotros{
+    background-color: #f8f3f0;
+}
+.pretitulo{
+    
+    color: #ff4375;
+}
+.pretitulo h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+    color: #d99a5c;
+}
+
+.pretitulo p{
+    text-align:justify;
+    font-size: 25px;
+    padding: 20px;
+    margin: 25px;
+}
+.pretitulo h3{
+    text-align: left;
+    font-size: 27px;
+    margin: 25px;
+    padding: 0px 0px 0px 15px;
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    overflow: hidden;
+    
+}
+
+.carrusel-img {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+    position: relative;
+    width: calc(33.33% - 10px); 
+    flex-shrink: 0;
+}
+
+.carrusel-item img {
+    width: 90%;
+    height: 450px;
+    display: block;
+    border-radius: 8px; 
+}
+
+.carrusel-titulo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+button.prev, button.next {
+    position: absolute;
+    top:30%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.Turnos{
+    width: 780px;
+    height: 880px;
+    top: 10%;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 480px;
+    width: 500px;
+}
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.form-container label {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="date"],
+.form-container select {
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffbed2;;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-container button:hover {
+    background-color:  #ff4375;
+}

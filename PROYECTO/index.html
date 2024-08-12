@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="css/estilo_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kurale&family=Laila:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Quattrocento:wght@400;700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="logo">
+                <h1>Donne</h1>
+            </div>
+            <div class="opciones">
+                <a href="#home">Home</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#Turnos">Turnos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="buscador">
+                <img src="img/search-dark.png" alt="lupita">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="Home">
+            <div id="parrafo">
+                <p>  
+                    Te recordamos que el chequeo anual contra el cáncer de mama es esencial. Agenda tu mamografía y cuida de ti misma,
+                    porque tu bienestar es nuestra prioridad..
+                </p>
+            </div>
+            <div id="imgp">
+                <img src="img/elegidas/mama.jpg" alt="imgp">
+            </div>
+            
+            
+        </section>
+        <section class="Nosotros">
+            <div class="pretitulo">
+                <h2>Nosotros</h2>
+                <p>
+                    Donne es un centro médico exclusivo para mujeres, diseñado para brindarte una atención integral y personalizada. 
+                    Entendemos que la vida puede ser agitada y que a veces es fácil olvidarse de los chequeos médicos regulares. Por eso,
+                    en Donne ofrecemos un espacio único donde puedes realizar todos tus chequeos médicos generales y encontrar una amplia
+                    gama de especialidades en un solo lugar.
+                </p>
+                <p>
+                    Nuestro objetivo es crear un entorno cálido y acogedor, donde cada mujer se sienta 
+                    respetada, protegida y bien atendida. Nos enfocamos en proporcionarte el mejor cuidado posible, con profesionales dedicados
+                    a tu bienestar. En nuestro centro, estamos comprometidos con tu salud y queremos recordarte la importancia de mantener tus chequeos al día.
+                    Tu salud es nuestra prioridad, y estamos aquí para apoyarte en cada paso del camino.
+                </p>
+                <h3>
+                    conoce nuestras especialidades:
+                </h3>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="carrusel">
+                <div class="carrusel-img">
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/medicinagral.jpg" alt="Imagen 1">
+                        <div class="carrusel-titulo">
+                            <h3>Medicina General</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/ginecologia.jpg" alt="Imagen 4">
+                        <div class="carrusel-titulo">
+                            <h3>Ginecologia</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/dermatologia.jpg" alt="Imagen 2">
+                        <div class="carrusel-titulo">
+                            <h3>Dermatologia</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/oftalmologia.jpg" alt="Imagen 6">
+                        <div class="carrusel-titulo">
+                            <h3>Oftalmologia</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/odontologia.jpg" alt="Imagen 6">
+                        <div class="carrusel-titulo">
+                            <h3>Odontrologia</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/nutricionista.jpg" alt="Imagen 3">
+                        <div class="carrusel-titulo">
+                            <h3>Nutricion</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/analisis.jpg" alt="Imagen 6">
+                        <div class="carrusel-titulo">
+                            <h3>Analisis</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/estudioscomplejo.jpg" alt="Imagen 6">
+                        <div class="carrusel-titulo">
+                            <h3>Estudios Complejos</h3>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="img/elegidas/cosmiatria.jpg" alt="Imagen 5">
+                        <div class="carrusel-titulo">
+                            <h3>Cosmiatria</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <section class="Turnos">
+            <div class="form-titulo">
+                <h2> Reserva tu turno</h2>
+            </div>
+            <div class="form-container">
+                <form action="/enviar_formulario">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <label for="especialidad">Especialidad:</label>
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="ginecologia">Ginecología</option>
+                        <option value="dermatologia">Dermatología</option>
+                        <option value="cardiologia">Cardiología</option>
+                        <option value="nutricion">Nutrición</option>
+                        <option value="psicologia">Psicología</option>
+                        <option value="medicinagral">Medicina General</option>
+                        <option value="odontologia">odontologia</option>
+                        <option value="oftalmologia">Oftalmologia</option>
+                        <option value="analisis">Analisis</option>
+                        <option value="estudioscomplejo">Estudios Complejos</option>
+                        <option value="cosmiatria">Cosmiatria</option>
+                    </select>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+<script src="js/script.js"></script>
+</html>
